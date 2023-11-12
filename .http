@@ -2,13 +2,26 @@
 @port=3333
 @host={{hostname}}:{{port}}
 
+// Create transaction
 POST http://{{host}}/transactions
 Content-Type: application/json
 
 {
-  "title": "Freelancer",
-  "amount": 8000,
-  "type": "credit"
+  "title": "Course",
+  "amount": 1000,
+  "type": "debit"
 }
 
 ###
+
+// List transactions
+GET http://{{host}}/transactions
+Accept: application/json
+
+###
+
+// List transaction by id
+@id=1b3cb7ad-e641-4b8c-9ffa-669c8fca3dbc
+GET http://{{host}}/transactions/{{id}}
+Accept: application/json
+

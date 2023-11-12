@@ -7,7 +7,7 @@ Setups the environment variables based on [.env.example](.env.example) file in t
 Run the database migrations:
 
 ```shell
-npm run knex [  ] migrate:latest
+npm run knex -- migrate:latest
 ```
 
 Run the server:
@@ -27,11 +27,9 @@ npm run dev
 
 ### Functional Requirements
 
-[ ] User must be able to create a new transaction;
+[x] User must be able to create a new transaction;
 [ ] User must be able to get a account statement;
-[ ] User must be able to list all existing transactions;
-[ ] User must be able to list a single transaction;
+[x] User must be able to list all existing transactions;
+[x] User must be able to list a single transaction;
 
 ### Non-functional Requirements
-
-[ ]
