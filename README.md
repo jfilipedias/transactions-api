@@ -1,8 +1,10 @@
 # Transactions API
 
-This is a REST API made with [fastify](https://fastify.dev/) and [knex](https://knexjs.org/) to handle users transactions. It handles the user's session ID through cookies, so the user can only see their own transaction.
+This is a REST API made with [fastify](https://fastify.dev/) and [knex](https://knexjs.org/) to handle users transactions. It handles the user's session ID through cookies, so the user can only see their own transaction. The test suit used in this project is [Vitest](https://vitest.dev/) with [SuperTest](https://github.com/ladjs/supertest) to handle end-to-end tests.
 
 ## Getting Started
+
+To run this project you must be using the Node.js on the version [v20.9.0](https://nodejs.org/dist/v20.9.0/) or greater.
 
 Setups the environment variables based on [.env.example](.env.example) file in the project root.
 
@@ -42,5 +44,7 @@ npm run dev
 - [Prettier](https://prettier.io/)
 - [knex](https://knexjs.org/)
 - [zod](https://zod.dev/)
+- [SuperTest](https://github.com/ladjs/supertest)
 - [tsx](https://github.com/privatenumber/tsx)
 - [TypeScript](https://typescriptlang.org)
+- [Vitest](https://vitest.dev/)
