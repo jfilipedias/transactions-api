@@ -1,0 +1,26 @@
+{
+	"name": "nodejs-02",
+	"version": "1.0.0",
+	"description": "A REST API developed with fastify",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tsx watch src/server.ts",
+		"lint": "eslint src --ext .ts --fix"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^20.9.0",
+		"@typescript-eslint/eslint-plugin": "^6.10.0",
+		"@typescript-eslint/parser": "^6.10.0",
+		"eslint": "^8.53.0",
+		"eslint-config-prettier": "^9.0.0",
+		"prettier": "^3.0.3",
+		"tsx": "^4.1.1",
+		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"fastify": "^4.24.3"
+	}
+}
