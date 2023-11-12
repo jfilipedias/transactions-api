@@ -22,17 +22,17 @@ npm run dev
 
 ### Business Rules
 
-[x] Credit transaction must add to the total account balance;
-[x] Debit transaction must subtract from the total account balance;
-[x] Must be able to identify the user between requests;
-[x] Users should only be able to see transactions they create;
+- [x] Credit transaction must add to the total account balance;
+- [x] Debit transaction must subtract from the total account balance;
+- [x] Must be able to identify the user between requests;
+- [x] Users should only be able to see transactions they create;
 
 ### Functional Requirements
 
-[x] User must be able to create a new transaction;
-[x] User must be able to get a account statement;
-[x] User must be able to list all existing transactions;
-[x] User must be able to list a single transaction;
+- [x] User must be able to create a new transaction;
+- [x] User must be able to get a account statement;
+- [x] User must be able to list all existing transactions;
+- [x] User must be able to list a single transaction;
 
 ## Dependencies
 
