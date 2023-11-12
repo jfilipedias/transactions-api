@@ -1,7 +1,7 @@
 {
-	"name": "nodejs-02",
+	"name": "transactions-api",
 	"version": "1.0.0",
-	"description": "A REST API developed with fastify",
+	"description": "A transaction REST API developed with fastify and knex",
 	"main": "index.js",
 	"scripts": {
 		"dev": "tsx watch src/server.ts",
