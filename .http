@@ -7,8 +7,8 @@ POST http://{{host}}/transactions
 Content-Type: application/json
 
 {
-  "title": "Course",
-  "amount": 1000,
+  "title": "Dinner",
+  "amount": 150,
   "type": "debit"
 }
 
@@ -21,13 +21,13 @@ Accept: application/json
 ###
 
 // List transaction by id
-@id=1b3cb7ad-e641-4b8c-9ffa-669c8fca3dbc
+@id=711d5d9e-1278-4ec6-afa5-7ed0dcd92da4
 GET http://{{host}}/transactions/{{id}}
 Accept: application/json
 
 ###
 
-// List transaction by id
+// List transaction statement
 GET http://{{host}}/transactions/statement
 Accept: application/json
 
