@@ -25,3 +25,9 @@ Accept: application/json
 GET http://{{host}}/transactions/{{id}}
 Accept: application/json
 
+###
+
+// List transaction by id
+GET http://{{host}}/transactions/statement
+Accept: application/json
+

@@ -28,7 +28,7 @@ npm run dev
 ### Functional Requirements
 
 [x] User must be able to create a new transaction;
-[ ] User must be able to get a account statement;
+[x] User must be able to get a account statement;
 [x] User must be able to list all existing transactions;
 [x] User must be able to list a single transaction;
 
