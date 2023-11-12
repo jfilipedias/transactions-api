@@ -1,5 +1,7 @@
 # Transactions API
 
+This is a REST API made with [fastify](https://fastify.dev/) and [knex](https://knexjs.org/) to handle users transactions. It handles the user's session ID through cookies, so the user can only see their own transaction.
+
 ## Getting Started
 
 Setups the environment variables based on [.env.example](.env.example) file in the project root.
@@ -20,10 +22,10 @@ npm run dev
 
 ### Business Rules
 
-[ ] Credit transaction must add to the total account balance;
-[ ] Debit transaction must subtract from the total account balance;
-[ ] Must be able to identify the user between requests;
-[ ] Users should only be able to see transactions they create;
+[x] Credit transaction must add to the total account balance;
+[x] Debit transaction must subtract from the total account balance;
+[x] Must be able to identify the user between requests;
+[x] Users should only be able to see transactions they create;
 
 ### Functional Requirements
 
@@ -32,4 +34,13 @@ npm run dev
 [x] User must be able to list all existing transactions;
 [x] User must be able to list a single transaction;
 
-### Non-functional Requirements
+## Dependencies
+
+- [dotenv](https://dotenv.org/)
+- [ESLint](https://eslint.org/)
+- [fastify](https://fastify.dev/)
+- [Prettier](https://prettier.io/)
+- [knex](https://knexjs.org/)
+- [zod](https://zod.dev/)
+- [tsx](https://github.com/privatenumber/tsx)
+- [TypeScript](https://typescriptlang.org)
