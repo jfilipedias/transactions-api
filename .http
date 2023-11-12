@@ -1,0 +1,8 @@
+@hostname=localhost
+@port=44320
+@host={{hostname}}:{{port}}
+
+GET http://{{host}}/
+Accept: application/json
+
+###
