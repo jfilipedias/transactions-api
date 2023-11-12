@@ -81,4 +81,34 @@ describe('Transactions routes', () => {
 			}),
 		)
 	})
+
+	it('should be able to get the transactions statement.', async () => {
+		const createTransactionResponse = await supertest(app.server)
+			.post('/transactions')
+			.send({
+				title: 'New transaction',
+				amount: 150,
+				type: 'credit',
+			})
+
+		const cookies = createTransactionResponse.get('Set-Cookie')
+
+		await supertest(app.server)
+			.post('/transactions')
+			.set('Cookie', cookies)
+			.send({
+				title: 'New transaction',
+				amount: 50,
+				type: 'debit',
+			})
+
+		const transactionsStatementResponse = await supertest(app.server)
+			.get('/transactions/statement')
+			.set('Cookie', cookies)
+			.expect(200)
+
+		expect(transactionsStatementResponse.body.statement).toEqual({
+			amount: 100,
+		})
+	})
 })
