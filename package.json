@@ -2,7 +2,10 @@
 	"name": "transactions-api",
 	"version": "1.0.0",
 	"description": "A transaction REST API developed with fastify and knex",
-	"main": "index.js",
+	"main": "./build/server.js",
+	"engines": {
+		"node": ">=20"
+	},
 	"scripts": {
 		"dev": "tsx watch src/server.ts",
 		"build": "tsup src --out-dir build",
@@ -32,6 +35,7 @@
 		"dotenv": "^16.3.1",
 		"fastify": "^4.24.3",
 		"knex": "^3.0.1",
+		"pg": "^8.11.3",
 		"sqlite3": "^5.1.6",
 		"zod": "^3.22.4"
 	}
