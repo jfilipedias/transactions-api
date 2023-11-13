@@ -52,5 +52,6 @@ npm run test
 - [zod](https://zod.dev/)
 - [SuperTest](https://github.com/ladjs/supertest)
 - [tsx](https://github.com/privatenumber/tsx)
+- [tsup](https://tsup.egoist.dev/)
 - [TypeScript](https://typescriptlang.org)
 - [Vitest](https://vitest.dev/)
